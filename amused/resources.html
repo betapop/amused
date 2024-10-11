@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>feelin' a little... amused</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/mainpage/funny.gif">
+    </head>
+    <body>
+        <div id="container"><div id="topBar">the site is mobile friendly!!! celebrate!!!</div>
+            <div id="headerArea">
+                <div id="header" style="margin-bottom: 10px; height: 152px;"></div>
+                
+            </div>
+
+            <div id="flex">
+                
+                <main>
+                <div class="cards">
+                  <div class="card">
+                    <center>
+                        welcome to a whole bunch of resources collected by yours truly. now most of these will pertain to oc/worldbuilding and things like that but there will be a few site decorations and things as well! thanks and enjoy ^^
+                        <br><br>
+                        <div style="background-color: c8f6d4; border: 1px black solid; border-radius: 10px; padding: 4px; width: 90%; margin-bottom: 2%;"><b><i>my generator masterlist</i></b>
+                        </div>
+                        <details style="text-transform: lowercase;">
+                        <summary>open the floodgates</summary>
+                        <a href="https://perchance.org/complex-character-gen" target="_blank">Complex Character Generator</a><br>
+                        <a href="https://perchance.org/character-gener" target="_blank">Simpler Character Generator</a><br>
+                        <a href="https://perchance.org/my-big-overly-detailed-character-generator" target="_blank">Overly Detailed Character Generator</a><br>
+                        <a href="https://perchance.org/3c8a9npk2d" target="_blank">Character Design Theme Generator</a><br>
+                        <a href="https://www.character-generator.org.uk/" target="_blank">Character Generator</a><br>
+                        <a href=" https://springhole.net/writing_roleplaying_randomators/charactergens.htm" target="_blank">Random Character Generator</a><br>
+                        <a href="https://writingexercises.co.uk/character.php" target="_blank">WritingExercises Character Generator</a><br>
+                        </details>
+                        <br>
+                        <div style="background-color: c8f6d4; border: 1px black solid; border-radius: 10px; padding: 4px; width: 90%; margin-bottom: 2%;"><b><i>favorite deco sites</i></b>
+                        </div>
+                        <div>i'll put something here later im tired of looking at links lol</div>
+                    </center>
+                    </div>
+                    
+                  <div class="card">
+                      <center>
+                    <div class="scrollbox" style="width: 100%; height: fit-content;">
+                        <h2 style="text-align: center; background-color:#c8f6d4; margin-top: 0; margin-bottom: 3%;">GENERATORS</h2>
+                        <h4 style="margin-bottom: 2%;">prompt generator</h4>
+                        
+                        <div id="output" style="margin-bottom: 3%; color: lightpink; font-size: 13px; padding: 1%;"></div>
+                        <button style="margin-bottom: 5%;">generate</button>
+                        <script>
+                        var btn = document.querySelector("button");
+                        var out = document.getElementById("output");
+
+
+                        btn.addEventListener("click", getWord);
+
+                        function getWord(){
+
+
+                          var theWord= [
+                            'You are often in the park, and theres this old man sitting on the same bench every time. He has some interesting stories to tell, but only after he died you learn his secret: He was a retired crime boss, and he left you a fortune',
+                            'You and your friends decided to summon a demon. You were excited that it worked, although it was somewhat undercut by your best friend giving the demon an awkward "Hi dad.".',
+                            'You have been sentenced to death and earth has decided to try a new manner of execution; putting you in a cryopod and launching you into space. 50,000 years later you are woken up by aliens and charged by the galactic council for operating a space craft without a license.',
+                          ];
+
+
+                          var wordNum = Math.floor(Math.random() * theWord.length);
+
+
+                          output.textContent = theWord[wordNum];
+                        }
+                        </script>
+                        </div>
+                        <br>
+                        <div style="background-color: c8f6d4; border: 1px black solid; border-radius: 10px; padding: 4px; width: 60%; margin-bottom: 2%;"><a href="/index.html">go home</a></div>
+                      </center>
+                    </div>
+                </div>
+                    
+                </main>
+                
+            </div>
+            <footer id="footer" style="margin-top: 10px;">made by @betapop | font by <a href="https://emhuo.itch.io/peaberry-pixel-font">@emhuo</a> | base by <a href="https://goblin-heart.net/sadgrl/projects/layout-builder/">@sadgrl</a></footer>
+        </div>
+
+    </body>
+</html>
